@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.div{
+    width: 500px;
+    justify-content: center;
+    margin:5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    
+}
+.div {
+     background: #dbdbdb;
+    -webkit-transition: .5s all;   
+    -webkit-transition-delay: 5s; 
+    -moz-transition: .5s all;   
+    -moz-transition-delay: 5s; 
+    -ms-transition: .5s all;   
+    -ms-transition-delay: 5s; 
+    -o-transition: .5s all;   
+    -o-transition-delay: 5s; 
+    transition: .5s all;   
+    transition-delay: 5s; 
+}
+
+.div:hover {
+    background:#5AC900;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.div:hover{
+    /* transform: rotate(180deg); */
+    transition-delay: 0.3s;
+}
+.div1{
+    width: 250px;
+    background-color: red;
+    border: 2px solid white;
+    height: 250px;
+    border-radius: 50% 50% 0 ;
+    /* box-shadow: 10px 10px 5px lightgreen inset; */
+}
+.div2{
+    width: 250px;
+    background-color: rgb(255, 247, 0);
+    border: 2px solid white;
+    height: 250px;
+    border-radius: 50% 50% 50% 0;
+}
+.div3{
+    width: 250px;
+    background-color: rgb(0, 0, 255);
+    border: 2px solid white;
+    height: 250px;
+    border-radius: 50%  0 50% 50%;
+    /* box-shadow: 1px 11px 19px 0px lightcoral; */
+}
+.div4{
+    width: 250px;
+    background-color: rgb(0, 255, 38);
+    border: 2px solid white;
+    height: 250px;
+    border-radius: 0  50% 50%;
+    /* box-shadow: 14px 14px 3px 5px lightcoral; */
+}
+</style>
+<body>
+    <div class="div">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+</body>
+</html>
